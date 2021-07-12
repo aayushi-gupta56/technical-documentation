@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/CSS" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="Technical documentation">
+        <meta name="description" content="Technical documentation for CSS">
+        <meta name="keywords" content="techincal, documentation, css, freecodecamp, fullstackdeveloper">
+        <meta name="author" content="Ayushi Gupta">
+        <title>
+            Documentify CSS
+        </title>
+    </head>
+    <body>
+        <div class="smartphone-menu-trigger" onclick="myFunction(event);"></div>
+        <nav class="menu" tabindex="0">
+            <header class="logo">Jump To Content</header>
+            <ul>
+                <li tabindex="0"><a href="#introduction">Introduction</a></li>
+                <li tabindex="0"><a href="#comments">Comments</a></li>
+                <li tabindex="0"><a href="#colours">Colours</a></li>
+                <li tabindex="0"><a href="#background">Backgrounds</a></li>
+                <li tabindex="0"><a href="#borders">Borders</a></li>
+                <li tabindex="0"><a href="#margins">Margins</a></li>
+                <li tabindex="0"><a href="#padding">Padding</a></li>
+                <li tabindex="0"><a href="#height-width">Height/Width</a></li>
+                <li tabindex="0"><a href="#box-model">Box Model</a></li>
+                <li tabindex="0"><a href="#outline">Outlines</a></li>
+                <li tabindex="0"><a href="#text">Text</a></li>
+                <li tabindex="0"><a href="#links">Links</a></li>
+                <li tabindex="0"><a href="#lists">Lists</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1 id="main-logo">documentify CSS</h1>
+            <hr>
+            <section id="introduction">
+                <h2>INTRODUCTION</h2>
+                <article>
+                    <h3>What is CSS?</h3>
+                    <ul>
+                        <li>CSS stands for Cascading Style Sheets.</li>
+                        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+                        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                        <li>External stylesheets are stored in CSS files</li>
+                    </ul>
+                    <h3>Why Use CSS?</h3>
+                    <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different 
+                    devices and screen sizes.</p>
+                </article>
+            </section>
+            <hr>
+            <section id="comments">
+                <h2>COMMENTS</h2>
+                <article>
+                    <p>Comments are used to explain the code, and may help when you edit the source code at a later date.Comments are ignored 
+                    by browsers. A CSS comment starts with /* and ends with */. You can add comments wherever you want in the code. A 
+                    comment can span multiple lines.</p>
+                </article>
+            </section>
+            <hr>
+            <section id="colours">
+                <h2>COLOURS</h2>
+                <article>
+                    <p>The color CSS data type represents a color. A color may also include an alpha-channel transparency value, indicating 
+                    how the color should composite with its background. A color can be defined in any of the following ways:</p>
+                    <ul>
+                        <li>Using a keyword (such as blue or transparent).</li>
+                        <li>Using the RGB cubic-coordinate system (via the #-hexadecimal or the rgb() and rgba() functional notations).</li>
+                        <li>Using the HSL cylindrical-coordinate system (via the hsl() and hsla() functional notations).</li>
+                        <li>Using the LCH cylindrical coordinate system, via the lch() functional notation.</li>
+                        <li>Using the Lab coordinate system, via the lab() functional notation.</li>
+                        <li>Using the color() functional notation, to specify a color in a variety of predifined or custom color spaces.</li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
+            <section id="background">
+                <h2>BACKGROUND</h2>
+                <article>
+                    <p>The background property in CSS allows you to control the background of any element (what paints underneath the content 
+                    in that element). It is a shorthand property, which means that it allows you to write what would be multiple CSS 
+                    properties in one. Background is made up of eight other properties:</p>
+                    <ul>
+                        <li>backround-image</li>
+                        <li>background-color</li>
+                        <li>background-position</li>
+                        <li>background-size</li>
+                        <li>background-clip</li>
+                        <li>background-origin</li>
+                        <li>background-blend-mode</li>
+                        <li>background-attachment</li>
+                        <li>background-repeat</li>
+                    </ul>
+                    <p>You can use any combination of these properties that you like, in almost any order (although the order recommended in 
+                    the spec is above). There is a gotcha though: anything you don’t specify in the background property is automatically set
+                    to its default</p>
+                </article>
+            </section>
+            <hr>
+            <section id="borders">
+                <h2>BORDERS</h2>
+                <article>
+                    <p>The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and 
+                        border-color. The border property may be specified using one, two, or three of the values listed below. The order of
+                        the values does not matter. The border will be invisible if its style is not defined. This is because the style 
+                        defaults to none. As with all shorthand properties, any omitted sub-values will be set to their initial value.
+                        Importantly, border cannot be used to specify a custom value for border-image, but instead sets it to its initial
+                        value, i.e., none. The border shorthand is especially useful when you want all four borders to be the same. To make 
+                        them different from each other, however, you can use the longhand border-width, border-style, and border-color 
+                        properties, which accept different values for each side. Alternatively, you can target one border at a time with the
+                        physical (e.g., border-top ) and logical (e.g., border-block-start) border properties.Borders and outlines are very
+                        similar. However, outlines differ from borders as outlines never take up space, as they are drawn outside of an 
+                        element's content. According to the spec, outlines don't have to be rectangular, although they usually are.</p>
+                </article>
+            </section>
+            <hr>
+            <section id="margins">
+                <h2>MARGINS</h2>
+                <article>
+                <p>Margins are used to create space around elements, outside of any defined borders. The CSS margin properties are used to 
+                    create space around elements, outside of any defined borders. With CSS, you have full control over the margins. There 
+                    are properties for setting the margin for each side of an element (top, right, bottom, and left). CSS has properties for
+                    specifying the margin for each side of an element:</p>
+                    <ul>
+                        <li>margin-top</li>
+                        <li>margin-bottom</li>
+                        <li>margin-left</li>
+                        <li>margin-right</li>
+                    </ul>
+                    <p>All the margin properties can have the following values:</p>
+                    <ul>
+                        <li>auto - the browser calculates the margin.</li>
+                        <li>length - specifies a margin in px, pt, cm, etc.</li>
+                        <li>% - specifies a margin in % of the width of the containing element.</li>
+                        <li>inherit - specifies that the margin should be inherited from the parent element.</li>
+                    </ul>
+                    <h3>Margin-shorthand Property</h3>
+                    <p>To shorten the code, it is possible to specify all the margin properties in one property.</p>
+                    <h3>Margin Collapse</h3>
+                    <p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the 
+                        two margins.This does not happen on left and right margins! Only top and bottom margins!</p>
+            </article>
+            </section>
+            <hr>
+            <section id="padding">
+                <h2>PADDING</h2>
+                <article>
+                    <p>Padding is used to create space around an element's content, inside of any defined borders. With CSS, you have full control over the padding.
+                        There are properties for setting the padding for each side of an element (top, right, bottom, and left).CSS has properties for specifying the
+                        padding for each side of an element:</p>
+                        <ul>
+                            <li>padding-top</li>
+                            <li>padding-bottom</li>
+                            <li>padding-left</li>
+                            <li>padding-right</li>
+                        </ul>
+                        <p>All the padding properties can have the following values:</p>
+                        <ul>
+                            <li>length - specifies a padding in px, pt, cm, etc.</li>
+                            <li>% - specifies a padding in % of the width of the containing element.</li>
+                            <li>inherit - specifies that the padding should be inherited from the parent element.</li>
+                        </ul>
+                        <h3>Padding-shorthand Property</h3>
+                        <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+                        <h3>Padding and element width</h3>
+                        <p>The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and
+                            margin of an element (the box model). So, if an element has a specified width, the padding added to that element will be added to the total
+                            width of the element. This is often an undesirable result.</p>
+                </article>
+            </section>
+            <hr>
+            <section id="height-width">
+                <h2>HEIGHT-WIDTH</h2>
+                <p>The height and width properties are used to set the height and width of an element. The height and width properties do not include padding, borders,
+                    or margins. It sets the height/width of the area inside the padding, border, and margin of the element. The height and width properties may have the 
+                    following values:</p>
+                <ul>
+                    <li>length - specifies height and width in px, pt, cm, etc.</li>
+                    <li>% - specifies a height and width in % of the containing element.</li>
+                    <li>inherit - specifies that the height and width should be inherited from the parent element.</li>
+                    <li>auto - This is default. The browser calculates the height and width.</li>
+                    <li>initial- This sets height and width to default value.</li>
+                </ul>
+                <div class="keyboard-example">
+                    div {<br>
+                            height: 100px;<br>
+                            width: 500px;<br>
+                            background-color: powderblue;<br>
+                        }<br>
+                </div>
+                <p>The problem occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+                    The max-width property is used to set the maximum width of an element. The max-width can be specified in length values, like px, cm, etc., or in 
+                    percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width). Using max-width instead, in this 
+                    situation, will improve the browser's handling of small windows. If you for some reason use both the width property and the max-width property on
+                    the same element, and the value of the width property is larger than the max-width property; the max-width property will be used (and the width 
+                    property will be ignored).</p>
+                <table>
+                    <caption>Various height and width properties</caption>
+                    <tr>
+                        <th>PROPERTY</th>
+                        <th>DESCRIPTION</th>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>Sets height of a element</td>
+                    </tr>
+                    <tr>
+                        <td>max-height</td>
+                        <td>Sets maximum height of a element</td>
+                    </tr>
+                    <tr>
+                        <td>min-height</td>
+                        <td>Sets minimum height of a element</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>Sets width of a element</td>
+                    </tr>
+                    <tr>
+                        <td>max-width</td>
+                        <td>Sets maximum width of a element</td>
+                    </tr>
+                    <tr>
+                        <td>min-width</td>
+                        <td>Sets minimum width of a element</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="box-model">
+                <h2>BOX-MODEL</h2>
+                <article>
+                    <p>All HTML elements can be considered as boxes. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins,
+                         borders, padding, and the actual content. The image below illustrates the box model: </p>
+                    <img src="box-model.PNG" alt="CSS BOX MODEL">
+                    <p>Explaination od different parts:</p>
+                    <ol>
+                        <li>CONTENT - The content of the box, where text and images appear</li>
+                        <li>PADDING - Clears an area around the content. The padding is transparent.</li>
+                        <li>BORDER - A border that goes around the padding and content.</li>
+                        <li>MARGIN - Clears an area outside the border. The margin is transparent.</li>
+                    </ol>
+                    <p>The box model allows us to add a border around elements, and to define space between elements. Consider the following div:</p>
+                    <div class="keyboard-example">
+                    div {<br>
+                            width: 300px;<br>
+                            border: 15px solid green;<br>
+                            padding: 50px;<br>
+                            margin: 20px;<br>
+                        }<br>
+                    </div>
+                <p>In order to set the width and height of an element correctly in all browsers, you need to know how the box model works. When you set the width and 
+                    height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must 
+                    also add padding, borders and margins. For example full width and heights of the div above are 470px both.</p>
+                </article>
+            </section>
+            <hr>
+            <section id="outline">
+                <h2>OUTLINES</h2>
+                <article>
+                    <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out". CSS has the following outline 
+                        properties:</p>
+                    <ul>
+                        <li>outline-style</li>
+                        <li>outline-color</li>
+                        <li>outline-width</li>
+                        <li>outline-offset</li>
+                        <li>outline</li>
+                    </ul>
+                    <p>Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline 
+                        is NOT a part of the element's dimensions, the element's total width and height is not affected by the width of the outline.</p>
+                    <h3>CSS outline-style PROPERTY</h3>
+                    <p>The outline-style property specifies the style of the outline, and can have one of the following values:</p>
+                    <ol>
+                        <li>dotted - Defines a dotted outline</li>
+                        <li>dashed - Defines a dashed outline</li>
+                        <li>solid - Defines a solid outline</li>
+                        <li>double - Defines a double outline</li>
+                        <li>groove - Defines a 3D grooved outline</li>
+                        <li>ridge - Defines a 3D ridged outline</li>
+                        <li>inset - Defines a 3D inset outline</li>
+                        <li>outset - Defines a 3D outset outline</li>
+                        <li>none - Defines no outline</li>
+                        <li>hidden - Defines a hidden outline</li>
+                    </ol>
+                    <em>None of the other outline properties will have ANY effect unless the outline-style property is set!</em>
+                </article>
+            </section>
+            <hr>
+            <section id="text">
+                <h2>TEXT</h2>
+                <article>
+                    <p>This text is styled with text-formatting properties. Some of which are:</p>
+                    <ul>
+                        <li>text-alignment</li>
+                        <li>text-color OR color</li>
+                        <li>text-decoration</li>
+                        <li>text-transformation</li>
+                        <li>text-shadow</li>
+                        <li>text-spacing</li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
+            <section id="links">
+                <h2>LINKS</h2>
+                <article>
+                    <p>With CSS, links can be styled in many different ways. Links can be styled with any CSS property (e.g. color, font-family, background, etc.). In 
+                        addition, links can be styled differently depending on what state they are in. The four links states are:</p>
+                    <ul>
+                        <li>a:unvisited - A normal unvisited link</li>
+                        <li>a:visited - A link user has visited</li>
+                        <li>a:hover - A link when user mouses over it</li>
+                        <li>a:active - A link when it is clicked</li>
+                    </ul>
+                    <em>When setting the style for several link states, there are some order rules:</em>
+                    <ol>
+                        <li>a:hover <strong>MUST</strong> come after a:link and a:visited</li>
+                        <li>a:active <strong>MUST</strong> come after a:hover</li>
+                    </ol>
+                    <h3>Text Decoration</h3>
+                    <p>The text-decoration property is mostly used to remove underlines from links.</p>
+                    <h3>Background Color</h3>
+                    <p>The background-color property can be used to specify a background color for links.</p>
+                    <h3>Link Buttons</h3>
+                    <p>We can combine several CSS properties to display links as boxes/buttons.</p>
+                    <h3>Cursor</h3>
+                    <p>You can make cursor look like different pointers when hovering over a link like cross-hair, resize-pointer, loading-pointer etc.</p>
+                </article>
+            </section>
+            <hr>
+            <section id="lists">
+                <h2>LISTS</h2>
+                <article>
+                    <p>The CSS list properties allow you to:</p>
+                    <ul>
+                        <li>Set different list item markers for ordered lists</li>
+                        <li>Set different list item markers for unordered lists</li>
+                        <li>Set an image as the list item marker</li>
+                        <li>Add background colors to lists and list items</li>
+                    </ul>
+                    <h3>Different List Item Markers</h3>
+                    <p>The list-style-type property specifies the type of list item marker.</p>
+                    <h3>Image as The List Item Marker</h3>
+                    <p>The list-style-image property specifies an image as the list item marker:</p>
+                    <div class="keyboard-example">list-style-image: url('sqpurple.gif');</div>
+                    <h3>Position The List Item Markers</h3>
+                    <p>The list-style-position property specifies the position of the list-item markers (bullet points).<kbd>list-style-position: outside;</kbd> means 
+                        that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default.
+                        <kbd>list-style-position: inside;</kbd> means that the bullet points will be inside the list item. As it is part of the list item, it will be 
+                        part of the text and push the text at the start.</p>
+                    <h3>Remove Default Settings</h3>
+                    <p>The <kbd>list-style-type:none</kbd> property can also be used to remove the markers/bullets. The list also has default margin and padding. To 
+                        remove this, add margin:0 and padding:0 to ul or ol elements.</p>
+                    <h3>List - Shorthand property</h3>
+                    <p>The list-style property is a shorthand property. It is used to set all the list properties in one declaration. When using the shorthand 
+                        property, the order of the property values are:</p>
+                    <ol>
+                        <li>list-style-type (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot 
+                            be displayed)</li>
+                        <li>list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)</li>
+                        <li>list-style-image (specifies an image as the list item marker)</li>
+                        <li>If one of the property values above are missing, the default value for the missing property will be inserted.</li>
+                    </ol>
+                    <h3>Styling List With Colors</h3>
+                    <p>We can also style lists with colors, to make them look a little more interesting. Anything added to the ol or ul tag, affects the entire list, 
+                        while properties added to the li tag will affect the individual list items.</p>
+                    <table>
+                        <caption>All CSS List Properties</caption>
+                        <tr>
+                            <th>PROPERTY</th>
+                            <th>DESCRIPTION</th>
+                        </tr>
+                        <tr>
+                            <td>list-style</td>
+                            <td>Sets all the properties for a list in one declaration</td>
+                        </tr>
+                        <tr>
+                            <td>list-style-image</td>
+                            <td>Specifies an image as the list-item marker</td>
+                        </tr>
+                        <tr>
+                            <td>list-style-position</td>
+                            <td>Specifies the position of the list-item markers (bullet points)</td>
+                        </tr>
+                        <tr>
+                            <td>list-style-type</td>
+                            <td>Specifies the type of list-item marker</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

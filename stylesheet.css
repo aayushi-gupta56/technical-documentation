@@ -1,0 +1,175 @@
+body {
+    background: #fff;
+    margin: 0;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000;
+    padding-left: 240px;
+    overflow-x: hidden;
+}
+
+.menu{
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    outline: none;
+    border-right: solid 1px rgba(0, 0, 0, 0.3);
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.logo{
+    font-size: 20px;
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: light;
+    margin: 30px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0.5em;
+    margin: 1em;
+    line-height: 3;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu ul li{
+    padding: 0.15em;
+    background-position: left 15px center;
+    background-size: cover;
+    transition: all 0.15s linear;
+    cursor: pointer;
+}
+
+.menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: solid 5px orangered;
+}
+
+main, section{
+    margin: 20px;
+}
+
+#main-logo{
+    color: orangered;
+    text-align: end;
+    font-size: 8vh;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: solid 5px orangered;
+}
+
+#box-model  article img{
+    max-width: 100%;
+}
+
+section h2{
+    color: orangered;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article > h3{
+    color: orangered;
+}
+
+.keyboard-example{
+    margin-left: 20vw;
+    font-family: monospace;
+}
+
+table{
+    border: solid black 1px;
+    width: 100%;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+caption{
+    color: orangered;
+    margin-top: 7px;
+}
+
+tr:nth-child(even){
+    background-color: orangered;
+    color: #fff;
+}
+
+th{
+    color: orangered;
+    height: 50px;
+}
+
+td{
+    height: 20px;
+}
+
+td, th{
+    text-align: left;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 580px){
+    body{
+        padding-left: 0;
+    }
+
+    #main-logo{
+        font-size: 30px;
+    }
+
+    .menu{
+        padding-top: 1em;
+        width: 100%;
+        box-shadow: 0 0 0 100em #00000000;
+        display: none;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .smartphone-menu-trigger{
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        background: orangered;
+        transition: all 0.3s ease-in-out;
+        top: 0;
+        z-index: 6;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .smartphone-menu-trigger:before,
+    .smartphone-menu-trigger:after {
+      content: '';
+      width: 50%;
+      height: 2px;
+      background: #fff;
+      border-radius: 10px;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    .smartphone-menu-trigger:after {
+      top: 55%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+
+}
